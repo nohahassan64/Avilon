@@ -1,0 +1,422 @@
+body { font-family: Arial, Tahoma, sans-serif; overflow: hidden;}
+/* Start Navbar */
+.navbar {
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+}
+.navbar.scrolled { background: linear-gradient(45deg , #1DDBA3 , #1DCBC6);}
+.navbar .navbar-brand { font-size: 34px; text-transform: uppercase; letter-spacing: 5px;}
+.navbar-dark .navbar-nav .nav-link { color: #fff}
+.navbar ul li {margin: 5px;}
+.dropdown-item { color: #000; padding: 10px 30px;}
+.dropdown-item:hover {color: #1DC8CD; background: #fff;}
+/* End Navbar */
+
+/* Start Header */
+.header { background: url('../imgs/home/intro.jpg');  height: 100vh;  position: relative}
+.header .overlay {
+    background: linear-gradient(45deg , rgba(29 , 220 , 161 , .7 ) , rgba(29, 200, 205, .7));
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.header .intro {  color: #fff;  margin: 110px auto;  text-align: center}
+.header .intro h1 { font-size: 50px; font-weight: normal}
+.header .intro p { font-size: 25px; font-weight: normal;}
+.header .intro button {
+    padding: 10px 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: normal;
+}
+.header .intro button:hover {  background-color: #fff; color: #1DC8CD}
+.header .imges-product {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+}
+.header .imges-product .product-1 {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: calc(50% + 60px);
+    z-index: 30;
+}
+.header .imges-product .product-2 {
+    position: absolute;
+    top: 90px;
+    bottom: 0;
+    left: calc(50% - 160px);
+    z-index: 20;
+}
+.header .imges-product .product-3 {
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+    left: calc(50% - 370px);
+    z-index: 10;
+}
+/* End Header */
+
+/* Start About Us */
+.about-us { padding: 40px 0; background-color: #EFF5F5;}
+.about-us .about-info img { width: 100%}
+.about-us .about-info h5 {  font-size: 32px; color: #666; margin-bottom: 25px}
+.about-us .about-info h6 { font-size: 18px;  color: #666;  font-style: italic;  margin-bottom: 30px}
+.about-info p {  color: #666;  margin-bottom: 40px; line-height: 1.6;}
+.about-info ul { list-style: none; margin: 0;}
+.about-info ul li { color : #666; margin-bottom: 20px}
+.about-info ul li i {  color: #1DC8CD; font-size: 18px;  margin-right: 3px}
+/* End About Us */
+
+/* Start Features-product */
+.features-product { padding: 60px 0;}
+.features-product .products .product-feature { margin-top: 50px}
+.features-product .product-feature i {  color: #1DC8CD; font-size: 35px; margin-bottom: 25px}
+.features-product .product-feature h3 {  font-size: 22px;  margin-bottom: 16px}
+.features-product .product-feature p { color: #666; font-size: 16px; line-height: 1.7}
+/* End Features-product */
+
+/* Start Features-section */
+/* Features-section-one */
+.features-section-one { padding: 40px 0; background-color: #EFF5F5}
+.features-section-one h5 {  font-weight: bold; color: #000;  font-size: 28px; margin-bottom: 30px}
+.features-section-one h6 { color: #A49999;  font-size: 16px; font-style: italic; margin-bottom: 30px}
+.features-section-one p { color: #666; font-size: 16px; line-height: 1.5}
+.features-section-one p:first-child { margin-bottom: 30px}
+
+/* Features-section-Two */
+.features-section-two { padding: 40px 0}
+.features-section-two h5 { font-weight: bold; color: #000; font-size: 28px; margin-bottom: 30px}
+.features-section-two .listed-features-1 i,
+.features-section-two .listed-features-2 i,
+.features-section-two .listed-features-3 i { font-size: 40px; color: #1DC8CD; float: left; width: 13%}
+.features-section-two .listed-features-1,
+.features-section-two .listed-features-,
+.features-section-two .listed-features-3 { overflow: hidden}
+.features-section-two .listed-features-1 p,
+.features-section-two .listed-features-2 p,
+.features-section-two .listed-features-3 p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    float: left;
+    width: 87%;
+}
+
+/* Features-section-Three */
+.features-section-three { padding: 40px 0; background-color: #EFF5F5}
+.features-section-three h5 { font-weight: bold; color: #000; font-size: 28px; margin-bottom: 30px}
+.features-section-three h6 { color: #A49999;  font-size: 16px; font-style: italic; margin-bottom: 30px}
+.features-section-three p { color: #666; font-size: 16px; line-height: 1.5}
+.features-section-three p:first-child { margin-bottom: 30px}
+.features-section-three .float-featued { overflow: hidden}
+.features-section-three .float-featued p:first-of-type { float: left; width: 87%}
+.features-section-three .float-featued i { float: left; width: 13%; font-size: 50px; color: #1DC8CD}
+/* End Features-section */
+
+/*  Start Call Action */
+.call { color: #fff; background-image: url('../imgs/call-to-action-bg.jpg'); padding: 60px 0}
+.call button {
+    padding: 10px 30px;
+    margin-top: 38px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.call button:hover { background: #1DC8CD; border: 2px solid #1DC8CD}
+/*  End Call Action */
+
+/* Start More Features */
+.more-features { padding: 60px 0; background-color: #EFF5F5}
+.more-features .box { background-color: #fff;  padding: 10px; margin-bottom: 30px}
+.more-features  .icon i { margin-top: 57px; margin-left: 40px; font-size: 55px; color: #1DC8CD}
+.more-features  .info-feat { margin-left: 40px}
+.more-features .info-feat h4 { margin-top: 30px; font-size: 20px; font-weight: bold}
+.more-features .info-feat p { margin-bottom: 30px; margin-top: 10px}
+/* End More Features */
+
+/* Start Clients */
+.clients { padding: 40px 0}
+.clients img{ opacity: .5; padding: 5px 10px}
+.clients img:hover { opacity: 1}
+/* End Clients */
+
+/* Start Pricing */
+.pricing { padding: 60px 0; background-color: #EFF5F5}
+.pricing .price { background-color: #fff; padding:40px}
+.pricing .price h3 { margin-bottom: 0}
+.price span { margin-bottom: 30px}
+.price span:first-of-type {  color: #1DC8CD;  font-size: 30px;  font-weight: normal;  margin-right: 2px;}
+.price span:nth-of-type(2) { color: #1DC8CD; font-size: 40px;  margin-right: 5px}
+.price span:last-of-type { color: rgb(179, 159, 145); font-size: 22px; font-weight: normal}
+.price ul { list-style: none;  margin: 20px 0  0  0; padding: 0}
+.price ul li { color : #BA9E99; margin-bottom: 10px; text-align: left}
+.price ul li i {
+    color: #1DC8CD;
+    font-size: 18px;
+    margin-right: 3px;
+    text-align: left;
+    margin-right: 10px;
+}
+.price button {
+    color: #fff;
+    background-color: #515E61;
+    border: none;
+    padding: 5px 30px;
+    margin-top: 20px;
+}
+.pricing .business { border: 2px solid #1DC8CD}
+.pricing .business button {  background: linear-gradient(45deg , #1DDBA3 , #1DCBC6)}
+/* End Pricing */
+
+/* Start Frequently Questions */
+.frequently-questions {  padding: 60px 0}
+.accordion { border: none;}
+.accordion>.card {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.accordion>.card>.card-header {  background: #fff;  border: none;}
+.btn-link { color: #262626; font-size: 20px; text-decoration: none}
+.btn-link:hover , .btn-link.focus { color: #0056b3; text-decoration: none}
+.frequently-questions  .icon { float: right}
+.card-body { padding-left: 40px}
+/* End Frequently Questions */
+
+/* Start Our Team */
+.our-team { padding: 60px 0; background-color: #EFF5F5}
+.our-team .my-team p { margin-top: 15px; font-weight: bold; font-size: 20px; margin-bottom: 0}
+.our-team .my-team span { display: block; margin-top: 0; font-size: 14px; font-style: italic}
+.our-team .my-team i {
+    color: #888;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.our-team .my-team i:hover {color: #1DC8CD}
+/* End Our Team */
+
+/* Start Gallery */
+.gallery { padding: 60px 0; perspective: 600px}
+.gallery .gallery-imgs .gallery-row { display: flex}
+.gallery .gallery-imgs .imge img { cursor: pointer; width: 100%}
+/* End Gallery */
+
+/* Start Contact */
+.contact { padding: 40px 0}
+.contact h3 { color: #1DC8CD; text-transform: uppercase; font-size: 35px}
+.contact p { color: #888; font-size: 14px; line-height: 1.8; margin-bottom: 25px}
+.contact i {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    border: 1px solid #1DC8CD;
+    color: #1DC8CD;
+    text-align: center;
+    margin-right: 3px;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.contact i:hover { background-color: #1DC8CD; color: #fff}
+.contact .location { overflow: hidden; margin-bottom: 40px}
+.contact .location i { border: none; float: left; font-size: 30px; margin-right: 15px}
+.contact .location .locate { float: left}
+.contact .location .locate span { display: block}
+.contact .email { overflow: hidden; margin-bottom: 40px}
+.contact .email i { border: none; float: left; font-size: 30px; margin-right: 15px}
+.contact .email span { float: left}
+.contact .phone { overflow: hidden}
+.contact .phone i { border: none; float: left; font-size: 30px; margin-right: 15px}
+.contact .phone span { float: left}
+.contact .input-text { overflow: hidden}
+.contact .input-text input:first-of-type { float: left; width: 49%; margin-right: 2%}
+.contact .input-text input:last-of-type { float: left; width: 49%}
+.contact input,
+.contact textarea { padding: 7px; border: 1px solid #ddd; margin-bottom: 15px}
+.contact .subject { width: 100%}
+.contact textarea { display: block; height: 120px; width: 100%}
+.contact button {
+    color: #fff;
+    border: none;
+    padding: 8px 30px;
+    background: linear-gradient(45deg , #1DDBA3 , #1DCBC6);
+    transform: translate(100%); 
+}
+/* End Contact */
+
+/* Start Footer */
+.footer { padding: 30px 0; overflow: hidden; border-top: 1px solid #ddd}
+.footer .footer-copy { float: left}
+.footer-copy .reserve { font-size: 14px}
+.footer-copy .reserve span { font-weight: bold}
+.footer-copy .design { font-size: 14px; color: #888}
+.footer-copy .design span { color: #1DC8CD}
+.footer .footer-icon { float: right}
+.footer-icon ul { list-style: none; margin: 0}
+.footer-icon ul li { display: inline-block; margin-right: 15px; font-size: 14px; color: #888}
+/* End Footer */
+
+/* Start Scroll */
+.scroll i {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 999;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: linear-gradient(45deg , #1DDBA3 , #1DCBC6);
+    text-align: center;
+    cursor: pointer;
+}
+/* End Scroll */
+
+/* Start Loading */
+.load {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.load .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.load .center .spinner {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg , #1DDBA3 , #1DCBC6);
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+/* End Loading */
+
+/* My Framework */
+.Head-line { position: relative}
+.Head-line::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 47%;
+    top: 60px;
+    border-bottom: 2px solid #26D0CA;
+    width: 80px;
+}
+.about-us .desc,
+.more-features p,
+.pricing p,
+.frequently-questions p,
+.our-team p,
+.gallery p{
+    margin: 50px 0;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+}
+.header .intro button,
+.call button,
+.clients img,
+.our-team .my-team i,
+.gallery .gallery-imgs .imge img,
+.contact i {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.header .intro button,
+.call button,
+.price button,
+.contact button {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+}
+.more-features .box,
+.pricing .price,
+.footer {
+    -webkit-box-shadow: 0 0 10px #ccc;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -o-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+/* Start Grid System */
+@media(max-width: 991px) {
+    .navbar-nav { background: linear-gradient(45deg , #1DDBA3 , #1DCBC6);}
+    .navbar ul li { padding-left: 15px;}
+    .header .imges-product .product-2, 
+    .header .imges-product .product-3 { display: none}
+    .header .imges-product .product-1 {  position: static;  margin-top: 30px}
+    .about-us { padding: 40px 12px}
+    .about-us .about-information { margin-top: 30px}
+    .about-us .about-info h5 { font-size: 22px; margin-bottom: 18px}
+    .about-us .about-information h6 , 
+    .about-us .about-information p , 
+    .about-us .about-information ul li { margin-bottom: 18px}
+    .features-product img { margin-bottom: 30px; width: 100%}
+    .features-section-one img,
+    .features-section-two img,
+    .features-section-three img { width: 100%}
+    .call, .clients, footer { text-align: center}
+    .pricing .price,
+    .our-team .my-team,
+    .contact .location,
+    .contact .phone { margin-bottom: 40px}
+    .contact .input-text input:first-of-type,
+    .contact .input-text input:last-of-type { width: 100%}
+    .footer .footer-copy,
+    .footer .footer-icon { float: none; margin-bottom: 8px}
+}
+@media(max-width: 767px){
+    .contact i {
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 576px) {
+    .about-us > p { font-size: 14px}
+}
